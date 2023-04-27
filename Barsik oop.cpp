@@ -13,19 +13,32 @@ class Animal{
 	// 1 cout << name + " start running \n";
     //    }
 	// 
-    //set funkziya izmenyet pole harakteristiku givotnogo
+    //сетер функция изменяющая характеристику животного
   public:
-	  Animal(int legs , string name , string type) {
+	  // 1й -способ записи конструктора
+
+	 /* Animal(int legs, string name, string type) {
 		this-> legs = legs;
 		this-> name = name;
 		this-> type = type;
 		//this-> указатель на объект ,владеющий функцией
 	  }
-	void set_legs(int new_legs) {
+	 */
+
+	  //2й -способ записи конструктора
+
+	  Animal(int legs, string name, string type) : legs(legs), name(name), type(type) {
+		  cout << "Vizvan konstruktor ot 3h parametrov";
+	  }
+
+    //сеттер закомичен
+
+	/*void set_legs(int new_legs) {
 		if (new_legs >= 0 && new_legs <= 1000) {
 			legs = new_legs;
 		}
 	}
+	*/
 	string get_all() {
 		return to_string(legs) + " nogi "  + name + "   " + type;
 
