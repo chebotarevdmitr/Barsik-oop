@@ -27,8 +27,14 @@ class Animal{
 
 	  //2й -способ записи конструктора
 
-	  Animal(int legs, string name, string type) : legs(legs), name(name), type(type) {
+	 /* Animal(int legs, string name, string type) : legs(legs), name(name), type(type) {
 		  cout << "Vizvan konstruktor ot 3h parametrov";
+	  }
+	 */
+
+     //3й -способ по умолчанию
+	  Animal() {
+		  cout << "Vizvan konstruktor umolchaniu";
 	  }
 
     //сеттер закомичен
@@ -56,7 +62,9 @@ int main()
 	// 2 cat.set_legs(-1);
 	// 2 cout << cat.get_legs(); 
 
-	Animal cat(4, "Barsik", "kot");
+	Animal cat;//(4, "Barsik", "kot");
 	cout << cat.get_all();
+
+
    system("pause>0");
 }
