@@ -15,10 +15,11 @@ class Animal{
 	// 
     //set funkziya izmenyet pole harakteristiku givotnogo
   public:
-	  Animal(int legs_ , string name_ , string type_) {
-		  legs = legs_;
-		  name = name_;
-		  type = type_;
+	  Animal(int legs , string name , string type) {
+		this-> legs = legs;
+		this-> name = name;
+		this-> type = type;
+		//this-> указатель на объект ,владеющий функцией
 	  }
 	void set_legs(int new_legs) {
 		if (new_legs >= 0 && new_legs <= 1000) {
