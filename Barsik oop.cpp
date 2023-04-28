@@ -32,14 +32,14 @@ class Animal{
 	  }
 	 
 
-     /*3й -способ по умолчанию
+     //3й -способ по умолчанию 
 	  Animal() {
-		  cout << "Vizvan konstruktor umolchaniu \n";
+		cout << "Vizvan konstruktor umolchaniu \n";
 	  }
-	  */
+	  
     //сеттер закомичен
 
-	/*void set_legs(int new_legs) {
+	/* void set_legs(int new_legs) {
 		if (new_legs >= 0 && new_legs <= 1000) {
 			legs = new_legs;
 		}
@@ -49,6 +49,10 @@ class Animal{
 		return to_string(legs) + " nogi "  + name + "   " + type;
 
 	}
+	~Animal() {
+		cout << "Vizvan destruktor \n";
+	}
+
 };
 
 
@@ -62,9 +66,10 @@ int main()
 	// 2 cat.set_legs(-1);
 	// 2 cout << cat.get_legs(); 
 
-	Animal cat(4, "Barsik", "kot");
-	cout << cat.get_all();
+	Animal cat;//(4, "Barsik", "kot");
+	cout << cat.get_all() << endl;
 
 
-   system("pause>0");
+  // system("pause>0");
+	return 0;
 }
