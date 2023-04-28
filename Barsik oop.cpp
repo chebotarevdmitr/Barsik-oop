@@ -36,7 +36,17 @@ class Animal{
 	  Animal() {
 		cout << "Vizvan konstruktor umolchaniu \n";
 	  }
+	    
+	  // -4 конструктор копирования
+	  /*конструктор копирования позволяет получать идентичный объект конструктор копирования должен получать входным параметром константную ссылку (&)
+	   на обект того же класса Если в классе есть динамическое выделение памяти то обязательно в ручную прописывается конструктор копирования
+	  */ 
+
+	  Animal(Animal& other) : legs(other.legs), name(other.name), type(other.type) {
+		  cout << "vizvan konstruktor kopirovaniya \n";
+	  }
 	  
+
     //сеттер закомичен
 
 	/* void set_legs(int new_legs) {
