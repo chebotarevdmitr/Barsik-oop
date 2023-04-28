@@ -69,13 +69,14 @@ class Animal{
 
 };
 
-
+  int Animal::numAnimal = 0;
 
 int main()
 {
-
-
-
+	
+	cout << Animal::numAnimal << endl;
+	Animal cat;
+	cout << Animal::numAnimal << endl;
 
 
 
