@@ -15,6 +15,10 @@ class Animal{
 	// 
     //сетер функция изменяющая характеристику животного
   public:
+
+    //статическая переменная
+	  static int numAnimal;
+
 	  // 1й -способ записи конструктора
 
 	 /* Animal(int legs, string name, string type) {
@@ -69,6 +73,13 @@ class Animal{
 
 int main()
 {
+
+
+
+
+
+
+
 	// 1 Animal cat = {4 ,"Barsik","kot"};
 	// 1 cat.run();
 
@@ -76,9 +87,9 @@ int main()
 	// 2 cat.set_legs(-1);
 	// 2 cout << cat.get_legs(); 
 
-	Animal cat(4, "Barsik", "kot");
-	Animal cat2(cat);
-	cout << cat2.get_all() << endl;
+	// 3 Animal cat(4, "Barsik", "kot");
+	// 3 Animal cat2(cat);
+	// 3 cout << cat2.get_all() << endl;
 
 
   // system("pause>0");
