@@ -66,8 +66,9 @@ int main()
 	// 2 cat.set_legs(-1);
 	// 2 cout << cat.get_legs(); 
 
-	Animal cat;//(4, "Barsik", "kot");
-	cout << cat.get_all() << endl;
+	Animal cat(4, "Barsik", "kot");
+	Animal cat2(cat);
+	cout << cat2.get_all() << endl;
 
 
   // system("pause>0");
