@@ -32,12 +32,14 @@ class Animal{
 	  //2й -способ записи конструктора
 
 	  Animal(int legs, string name, string type) : legs(legs), name(name), type(type) {
+		  ++numAnimal;
 		  cout << "Vizvan konstruktor ot 3h parametrov \n";
 	  }
 	 
 
      //3й -способ по умолчанию 
 	  Animal() {
+		  ++numAnimal;
 		cout << "Vizvan konstruktor umolchaniu \n";
 	  }
 	    
@@ -47,6 +49,7 @@ class Animal{
 	  */ 
 
 	  Animal(Animal& other) : legs(other.legs), name(other.name), type(other.type) {
+		  ++numAnimal;
 		  cout << "vizvan konstruktor kopirovaniya \n";
 	  }
 	  
